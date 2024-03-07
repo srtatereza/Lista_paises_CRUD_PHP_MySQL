@@ -1,0 +1,112 @@
+:root {
+    --oscuro: #212121;
+    --claro: #ffffff;
+    --gris: #D3D3D3;
+    --secundario: #000dff;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-color: var(--oscuro);
+    color: var(--claro)
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+
+}
+
+.th {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.table,
+.tr,
+.td {
+    border: 1px solid var(--secundario);
+    color: var(--oscuro);
+    background-color: var(--claro);
+    font-size: bold;
+}
+
+.table {
+    display: table;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.tr {
+    display: table-row;
+}
+
+.td {
+    display: table-cell;
+    padding: 0.5rem;
+
+}
+
+span .td {
+    background-color: var(--gris);
+}
+
+.tr form {
+    display: inline;
+}
+
+span {
+    background-color: gainsboro;
+}
+
+.formulario-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+input {
+    font-size: 1.7rem;
+    background-color: var(--claro);
+    border: 2px solid var(--secundario);
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+}
+
+label {
+    font-size: 1.7rem;
+}
+
+.bloque-boton {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
